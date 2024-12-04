@@ -1,10 +1,21 @@
 {
-  "dependencies": {
-    "@hono/node-server": "^1.13.7",
-    "@skyware/jetstream": "^0.2.1",
-    "hono": "^4.6.12"
-  },
+  "name": "bsky-games",
+  "version": "1.0.0",
+  "description": "bsky games",
+  "main": "index.js",
+  "repository": "git@github.com:imlunahey/bsky-games.git",
+  "author": "imlunahey",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "NODE_OPTIONS=\"--experimental-websocket\" npx tsx ./app.ts"
+    "start": "NODE_OPTIONS=\"--experimental-websocket\" npx tsx ./src/app.ts"
+  },
+  "dependencies": {
+    "hono": "^4.6.12",
+    "@hono/node-server": "^1.13.7",
+    "@skyware/jetstream": "^0.2.1"
+  },
+  "engines": {
+    "node": ">= 18"
   }
 }
