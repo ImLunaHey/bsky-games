@@ -18,6 +18,9 @@ const updateBoard = (text: string) => {
   const y = parseInt(items[1]);
   const colour = items[2];
 
+  if (x < 0 || x >= board.length) return;
+  if (y < 0 || y >= board[0].length) return;
+
   console.info(`Updating board at ${x}, ${y} to ${colour}`);
   board[x][y] = colour;
 };
